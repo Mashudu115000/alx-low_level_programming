@@ -1,10 +1,12 @@
 #include <studio.h>
 /**
- * main - A program that prints a line with puts function
- * Eeturn: 0 (Success)
+ * main - Entry
+ * Return: Always 0
  */
 int main(void)
 {
-puts("\"Programming is like building a multilingual puzzle");
-return(0);
+	puts("\"Programming is like building multi
+lingual puzzle");
+	return (0);
 }
+
