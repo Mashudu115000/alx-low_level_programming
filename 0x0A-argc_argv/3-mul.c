@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include "main.h"
 /**
  * main - print the result of the multiplication
  * @argc: number of arguments
