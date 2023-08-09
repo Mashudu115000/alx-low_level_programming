@@ -1,26 +1,21 @@
 #include <stdio.h>
 #include "main.h"
+#include <stdlib.h>
 /**
  * main - print the result of the multiplication
  * @argc: number of arguments
  * @argv: arguments vector
- * 
- * return: 0
+ * return: 0 
  */
 int main(int argc, char *argv[])
+{											int a, b;
+if (argc == 3)
 {
-	int n1 = 0, n2 = 0;
-
-	if (argc == 3)
-	{
-		n1 = atoi(argv[1]);
-		n2 = atoi(argv[2]);
-		printf("%d\n", n1 * n2);
-	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
-	return (0);
+a = atoi(argv[1]);
+b = atoi(argv[2]);
+printf("%d\n", a *b);
+return (0);
+}
+printf("Error\n");
+return (1);
 }
