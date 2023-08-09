@@ -1,18 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h>		
-#include <string.h>
-#include <ctype>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Print the result
  * @argv: number of arguments
- * @argc: arguments vector 
+ * @argc: number vector
  * Return: 0
  */
 int main(int argc, char *argv[])
 {
 	int i, j, add = 0;
-	
+
 	for (i = 1; i < argc; i++)
 	{
 		for (j = 0; argv[i][j] != '\0'; j++)
@@ -23,9 +22,8 @@ int main(int argc, char *argv[])
 				return (1);
 			}
 		}
-		add += atoi(arg[i]);
+		add += atoi(argv[i]);
 	}
-	printf("%d\n, add");
+	printf("%d\n", add);
 	return (0);
 }
-
